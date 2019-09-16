@@ -1,0 +1,5 @@
+﻿[
+	{ id: "RoomManager", text: "客房预订管理系统"},
+	{ id: "RoomInfoList.aspx", pid: "RoomManager", text: "客房信息" },
+	{ id: "ReserveInfoList.aspx", pid: "RoomManager", text: "预定信息" },	
+]
