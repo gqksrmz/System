@@ -34,9 +34,6 @@ namespace DAL
                 new SqlParameter("@reservecost",entity.ReserveCost)
             };
             int r = SqlHelper.ExecuteNonQuery(sql, CommandType.Text, pms);
-
-
-
             string sql2 = @"update RoomInfo set roomsurplus=roomsurplus-1 where roomname=@roomname ";
             SqlParameter pms2 = new SqlParameter("@roomname", entity.ReserveName);
             int r2 = SqlHelper.ExecuteNonQuery(sql2, CommandType.Text, pms2);
